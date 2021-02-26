@@ -1,0 +1,11 @@
+View Roles:
+	kubectl describe rolebindings.rbac.authorization.k8s.io
+	
+Get Clusterroles:
+	kubectl get clusterroles
+	
+View Available Resources to assign:
+	kubectl api-resources
+	
+View Verbs for a specific resources
+	kubectl api-resources -o wide

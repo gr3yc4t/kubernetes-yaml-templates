@@ -1,0 +1,2 @@
+Get YAML config from a running container:
+	kubectl get node NODE_NAME --output=yaml

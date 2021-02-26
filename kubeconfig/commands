@@ -1,0 +1,5 @@
+Main command:
+	kubectl config
+
+Append you kubeconfig to env:
+	export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config

@@ -11,6 +11,17 @@ spec:
       app: nginx
   ingress:
   - from:
+    #Filter based on pod's label
     - podSelector:
         matchLabels:
           app: foo
+    #Filter based on namespace
+    - namespaceSelector:
+      	matchLabels:
+      	  name: my-namespace	
+    #IP filtering
+    - ipBlock:
+    	cidr: 192.168.5.10/32
+    ports:
+    - protocol: TCP
+      port: 80

@@ -1,0 +1,2 @@
+Assign a label to a node:
+	kubectl label node node01 key=value

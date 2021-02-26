@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: task-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 10Gi
+  #For list of available access mode see (https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data"

@@ -39,3 +39,7 @@ spec:
       # configure security context at container level, instead of pod level
       runAsUser: 2000
       allowPrivilegeEscalation: false
+      # configure capabilities of a pod
+      #For a list of capabilities see https://man7.org/linux/man-pages/man7/capabilities.7.html
+      capabilities:
+        add: ["NET_ADMIN", "SYS_TIME"]

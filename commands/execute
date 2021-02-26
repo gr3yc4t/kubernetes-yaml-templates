@@ -1,0 +1,2 @@
+Execute command in a container:
+	kubectl exec -it continer-name command
